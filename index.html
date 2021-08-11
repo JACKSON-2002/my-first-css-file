@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width , initial-scale = 1.0">
+    <title>🐒 portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div class="hero">
+     <header class="l-header" id="header">
+      <nav>
+        <h1>MONKEY CREATIONS</h1>
+        <img class="menu-img" src="images/monkey.png">
+        
+        <ul>
+          <li><a href="">My Profile</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Skills</a></li>
+          <li><a href="">contact</a></li>
+        </ul>
+
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        <button type="button" onclick="myFunction()">Mode</button>
+        
+        
+      </nav>
+
+     </header>
+
+      
+
+      <div class="lamp-container">
+        <img src="images/lamp.png" class="lamp">
+        <img src="images/light1.png" class="light1" id="light1">
+        
+        
+       
+      </div>
+
+      <div class="text-container">
+        <h1>MY NEW IDEA </h1>
+        <p>my journey begins</p>
+        <a href="">check my other items</a>
+       
+      </div>
+    </div>
+
+
+
+<script>
+  var btn = document.getElementById("btn");
+  var light =  document.getElementById("light1");
+  
+  
+  
+  function toggleBtn() {
+    btn.classList.toggle("active");
+    light.classList.toggle("on");
+  }
+</script>
+
+
+<script>
+var light1= document.getElementById("light1");
+function myFunction() {
+
+  var element = document.body;
+  element.classList.toggle("light-mode");
+  light1.classList.toggle("on");
+}
+</script>
+  </body>
+</html>
